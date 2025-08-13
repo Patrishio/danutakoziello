@@ -1,0 +1,20 @@
+# Node dependencies
+node_modules/
+
+# Build output
+public/
+
+# Gatsby cache
+.cache/
+
+# Netlify local settings
+.netlify/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db

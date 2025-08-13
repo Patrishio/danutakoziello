@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section p {
+    max-width: 1000px;
+}
+
+.specialization-blob {
+  cursor: default;
+  opacity: 0.8;
+  transition: all 0.3s ease-in;
+}
+
+.specialization-blob:hover {
+  box-shadow: 0 0 10px 10px pink;
+  opacity: 1;
+}
+
+@keyframes slide-down {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-out;
+}
+
+.accordion-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.accordion-content.open {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.text-shadow-white:hover {
+  text-shadow: 0 0 8px white;
+}
