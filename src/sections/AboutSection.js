@@ -13,7 +13,6 @@ const AboutSection = () => (
         <p className="mb-6 leading-relaxed text-lg">
           Nazywam się Danuta Koziełło-Doherty i jestem psychologiem klinicznym oraz certyfikowanym psychoterapeutą.
           Od 1995 roku prowadzę terapię indywidualną dorosłych, opartą na aktualnej wiedzy neurobiologicznej i psychologicznej.
-          Specjalizuję się w pracy z traumą, teorią przywiązania oraz trudnościami wynikającymi z deficytów rozwojowych.
         </p>
         <p className="leading-relaxed text-lg">
           Ukończyłam studia psychologiczne ze specjalnością Psychologia Kliniczna na Uniwersytecie im. Adama Mickiewicza w Poznaniu.
