@@ -15,7 +15,7 @@ const SEO = () => {
         content="Danuta Koziełło-Doherty, psycholog kliniczny i certyfikowany psychoterapeuta. Specjalizuję się w terapii traumy, teorii przywiązania i podejściach somatycznych. Terapia indywidualna online i stacjonarnie."
       />
       <meta name="author" content="Danuta Koziełło-Doherty" />
-      <meta name="keywords" content="psychoterapia, trauma, terapia EMDR, terapia Gestalt, terapia online, psycholog kliniczny, terapia somatyczna" />
+      <meta name="keywords" content="Psycholog, Psychoterapia indywidualna, Terapia indewidualna, Metody, Terapia z cialem, Leeds, WestYorkshire, Terapia Online,Polski psychoterapeta leeds" />
       <meta name="robots" content="index, follow" />
       <meta name="language" content="pl-PL" />
 
