@@ -19,7 +19,9 @@ const InfoSection = () => (
           <li><strong>Forma spotkań:</strong>  online lub stacjonarnie (w zależności od dostępności)</li>
           <li>
             <p className="text-gray-700 mt-0 ml-0 max-w-md mx-2">
-              Przyjmuje w Leeds rejon Headingley. Dokładny adres podaje po umówieniu wizyty.
+              <span class="font-bold">Przyjmuje w Leeds rejon Headingley. </span>
+
+              Dokładny adres podaje po umówieniu wizyty.
             </p>
           </li>
         </ul>
