@@ -18,8 +18,8 @@ const InfoSection = () => (
           <li><strong>Godziny pracy:</strong> Poniedziałek–Piątek, 10:00–19:00</li>
           <li><strong>Forma spotkań:</strong>  online lub stacjonarnie (w zależności od dostępności)</li>
           <li>
-            <p className="text-gray-700 mt-0 ml-0 max-w-md mx-2 font-bold">
-              Przyjmuje Leeds rejon Headingley. Dokładny adres podaje po umówieniu wizyty.
+            <p className="text-gray-700 mt-0 ml-0 max-w-md mx-2">
+              Przyjmuje w Leeds rejon Headingley. Dokładny adres podaje po umówieniu wizyty.
             </p>
           </li>
         </ul>
