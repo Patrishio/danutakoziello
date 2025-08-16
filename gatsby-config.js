@@ -43,11 +43,22 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-google-tagmanager",
-        options: {
+      options: {
         id: "GTM-MMMJDLSW",
         includeInDevelopment: false,
         defaultDataLayer: { platform: "gatsby" },
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-7TR1Z5SM2S",
+        ],
+        pluginConfig: {
+          head: true,
+        },
+      }
     }
   ],
 }
