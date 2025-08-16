@@ -2,9 +2,25 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 const SEO = () => {
-  const siteUrl = 'https://dkdpoc.netlify.app';
+  const siteUrl = 'https://danutakoziello-doherty.co.uk/';
   const faviconPath = '/favicon.ico';
   const ogImagePath = '/og-image.webp';
+
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Danuta Koziełło-Doherty",
+    "jobTitle": "Psycholog, Psychoterapeuta",
+    "description": "Psycholog i psychoterapeuta specjalizujący się w terapii traumy, teorii przywiązania i podejściach somatycznych.",
+    "url": siteUrl,
+    "image": `${siteUrl}/og-image.webp`,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Leeds",
+      "addressRegion": "West Yorkshire",
+      "addressCountry": "UK"
+    }
+  }
 
   return (
     <Helmet>
@@ -12,12 +28,13 @@ const SEO = () => {
       <title>Danuta Koziełło-Doherty – Psychoterapia i wsparcie terapeutyczne</title>
       <meta
         name="description"
-        content="Danuta Koziełło-Doherty, psycholog kliniczny i certyfikowany psychoterapeuta. Specjalizuję się w terapii traumy, teorii przywiązania i podejściach somatycznych. Terapia indywidualna online i stacjonarnie."
+        content="Danuta Koziełło-Doherty – psycholog i psychoterapeuta. Pomagam w terapii traumy, relacjach i rozwoju osobistym. Spotkania online i w gabinecie."
       />
       <meta name="author" content="Danuta Koziełło-Doherty" />
       <meta name="keywords" content="Psycholog, Psychoterapia indywidualna, Terapia indewidualna, Metody, Terapia z cialem, Leeds, WestYorkshire, Terapia Online,Polski psychoterapeta leeds" />
       <meta name="robots" content="index, follow" />
       <meta name="language" content="pl-PL" />
+      <link rel="canonical" href={`${siteUrl}${pathname || ""}`} />
 
       {/* Open Graph */}
       <meta property="og:type" content="website" />
@@ -42,6 +59,11 @@ const SEO = () => {
 
       {/* Favicon */}
       <link rel="icon" href={`${siteUrl}${faviconPath}`} type="image/x-icon" />
+
+      {/* JSON-LD Schema.org */}
+      <script type="application/ld+json">
+        {JSON.stringify(schemaData)}
+      </script>
     </Helmet>
   );
 };
