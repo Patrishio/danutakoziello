@@ -8,12 +8,12 @@ import MethodsSection from "../sections/MethodsSection";
 import InfoSection from "../sections/InfoSection";
 import FooterSection from "../sections/FooterSection";
 import SpecializationSection from "../sections/SpecializationSection";
-import SEO from '../components/seo';
+import Seo from '../components/Seo';
 
 const IndexPage = () => {
   return (
     <>
-      <SEO />
+      <Seo />
       <StickyHeader />
       <main className="font-sans text-gray-700 bg-pink-50">
         <HeroSection />

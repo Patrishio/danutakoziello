@@ -63,7 +63,15 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
+        host: "https://danutakoziello-doherty.co.uk",
+        sitemap: "https://danutakoziello-doherty.co.uk/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
       },
     }
   ],

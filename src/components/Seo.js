@@ -1,9 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { useLocation } from '@reach/router';
 
-const SEO = () => {
-  const { pathname } = useLocation();
+const Seo = () => {
+  const pathname = typeof window !== "undefined" ? window.location.pathname : "/";
 
   const siteUrl = 'https://danutakoziello-doherty.co.uk/';
   const faviconPath = '/favicon.ico';
@@ -31,7 +30,7 @@ const SEO = () => {
       <title>Danuta Koziełło-Doherty – Psychoterapia i wsparcie terapeutyczne</title>
       <meta
         name="description"
-        content="Danuta Koziełło-Doherty – psycholog i psychoterapeuta. Pomagam w terapii traumy, relacjach i rozwoju osobistym. Spotkania online i w gabinecie."
+        content="Danuta Koziełło-Doherty – psycholog i psychoterapeuta. Oferuję terapię traumy, pracę z relacjami i wsparcie online oraz w gabinecie w Leeds."
       />
       <meta name="author" content="Danuta Koziełło-Doherty" />
       <meta name="keywords" content="Psycholog, Psychoterapia indywidualna, Terapia indewidualna, Metody, Terapia z cialem, Leeds, WestYorkshire, Terapia Online,Polski psychoterapeta leeds" />
@@ -71,4 +70,4 @@ const SEO = () => {
   );
 };
 
-export default SEO;
+export default Seo;

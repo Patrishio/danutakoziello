@@ -11,9 +11,9 @@ const ContactSection = () => (
     <p className="mb-3 text-lg mx-2">📞 <a href="tel:+447792772661" className="text-teal-600 hover:underline">0044 7792772661</a></p>
     <p className="mb-3 text-lg mx-2">✉️ <a href="mailto:danuta.koziello@gmail.com" className="text-teal-600 hover:underline">danuta.koziello@gmail.com</a></p>
     <p className="text-gray-700 mt-6 max-w-md mx-2">
-      <p className="ml-0 max-w-md mx-2 font-bold">
+      <span className="ml-0 max-w-md mx-2 font-bold">
         Przynależność do Stowarzyszeń zawodowych:
-      </p>
+      </span>
       Jestem czlonkiem British Psychological Society (BPS); European Association for Body Psychotherapy (EABP);
       EMDR Association for UK & Irland; Polish Association of Somatic Experiencing (PSSE); The Health and Care Professions Council in UK (HCPC).
     </p>

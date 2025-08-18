@@ -21,12 +21,13 @@ const StickyHeader = () => {
   return (
     <header className="sticky top-0 bg-gradient-to-r from-teal-600 to-teal-700 shadow-lg z-50 border-b border-teal-800">
       <nav className="max-w-6xl mx-auto flex justify-between items-center py-5 px-8 md:px-2 lg:px-8">
-        <h1
+        <a
+          href="#top"
           className="text-white text-xl lg:text-2xl font-semibold cursor-pointer select-none hover:text-teal-300 transition-colors duration-300 mb-0"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          Danuta Koziełło-Doherty
-        </h1>
+          <h1 className="m-0">Danuta Koziełło-Doherty</h1>
+        </a>
+
 
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-4 font-medium text-sm mb-0">

@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Seo from "../components/Seo"
 
 const UsingSSR = ({ serverData }) => {
   return (
@@ -16,7 +16,6 @@ const UsingSSR = ({ serverData }) => {
         <code>dog.ceo/api/breed/shiba/images/random</code>:
       </p>
       <img
-        style={{ width: "320px", borderRadius: "var(--border-radius)" }}
         alt="A random dog"
         src={serverData.message}
       />
