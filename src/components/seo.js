@@ -1,7 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { useLocation } from '@reach/router';
 
 const SEO = () => {
+  const { pathname } = useLocation();
+
   const siteUrl = 'https://danutakoziello-doherty.co.uk/';
   const faviconPath = '/favicon.ico';
   const ogImagePath = '/og-image.webp';
