@@ -2,7 +2,9 @@
 node_modules/
 
 # Build output
-public/
+public/~partytown
+public/icons
+public/page-data
 
 # Gatsby cache
 .cache/

@@ -12,7 +12,7 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://danutakoziello-doherty.co.uk`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -50,22 +50,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          "G-7TR1Z5SM2S",
-        ],
-        pluginConfig: {
-          head: true,
-        },
-      }
-    },
-    {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://danutakoziello-doherty.co.uk",
         sitemap: "https://danutakoziello-doherty.co.uk/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/"
+          }
+        ],
       },
     },
     {
