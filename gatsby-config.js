@@ -34,9 +34,6 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/lotus-flower.webp`,
       },
@@ -67,6 +64,41 @@ module.exports = {
       options: {
         output: `/sitemap.xml`,
       },
-    }
+    },
+    `gatsby-plugin-preact`,
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/*": [
+            "X-Frame-Options: DENY",
+            "X-XSS-Protection: 1; mode=block",
+            "X-Content-Type-Options: nosniff",
+            "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+          ],
+          "/static/*": [
+            "Cache-Control: public, max-age=31536000, immutable",
+          ],
+          "/*.js": [
+            "Cache-Control: public, max-age=31536000, immutable",
+          ],
+          "/*.css": [
+            "Cache-Control: public, max-age=31536000, immutable",
+          ],
+          "/*.html": [
+            "Cache-Control: public, max-age=0, must-revalidate",
+          ],
+          "/icons/*": [
+            "Cache-Control: public, max-age=31536000, immutable",
+          ],
+          "/images/*": [
+            "Cache-Control: public, max-age=31536000, immutable",
+          ],
+        },
+        mergeSecurityHeaders: true,
+        mergeCachingHeaders: true,
+        generateMatchPathRewrites: true,
+      },
+    },
   ],
 }
