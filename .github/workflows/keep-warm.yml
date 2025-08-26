@@ -11,6 +11,3 @@ jobs:
     steps:
       - name: Ping homepage
         run: curl -s https://danutakoziello-doherty.co.uk/ > /dev/null
-
-      - name: Ping sitemap
-        run: curl -s https://danutakoziello-doherty.co.uk/sitemap.xml > /dev/null
