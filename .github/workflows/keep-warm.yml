@@ -12,8 +12,5 @@ jobs:
       - name: Ping homepage
         run: curl -s https://danutakoziello-doherty.co.uk/ > /dev/null
 
-      - name: Ping blog
-        run: curl -s https://danutakoziello-doherty.co.uk/blog/ > /dev/null
-
       - name: Ping sitemap
         run: curl -s https://danutakoziello-doherty.co.uk/sitemap.xml > /dev/null
