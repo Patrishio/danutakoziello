@@ -1,0 +1,19 @@
+name: Keep Netlify Warm
+
+on:
+  schedule:
+    - cron: "*/10 * * * *" # every 10 min auto
+  workflow_dispatch: # allow manual
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping homepage
+        run: curl -s https://danutakoziello-doherty.co.uk/ > /dev/null
+
+      - name: Ping blog
+        run: curl -s https://danutakoziello-doherty.co.uk/blog/ > /dev/null
+
+      - name: Ping sitemap
+        run: curl -s https://danutakoziello-doherty.co.uk/sitemap.xml > /dev/null
