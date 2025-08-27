@@ -75,7 +75,6 @@ module.exports = {
         output: `/sitemap.xml`,
       },
     },
-    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
@@ -110,5 +109,5 @@ module.exports = {
         generateMatchPathRewrites: true,
       },
     },
-  ],
+  ]
 }
