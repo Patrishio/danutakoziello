@@ -10,4 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping homepage
-        run: curl -s https://danutakoziello-doherty.co.uk/ > /dev/null
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://danutakoziello-doherty.co.uk/)
+          echo "Response code: $STATUS"
+          exit 0
