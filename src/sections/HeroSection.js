@@ -23,7 +23,7 @@ const HeroSection = () => (
 
     <div className="relative z-10 bg-opacity-50 md:bg-opacity-0 bg-black py-4 md:py-0">
       <h2 className="text-2xl md:text-5xl font-extrabold mb-6 md:mb-3 leading-tight">
-        Danuta Koziełło-Doherty
+        Polski psychoterapeuta w Leeds
       </h2>
       <p className="text-xl max-w-xl mx-auto">
         Psychoterapia indywidualna dorosłych – oparcie na neurobiologii i psychologii

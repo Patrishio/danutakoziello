@@ -14,8 +14,36 @@ const ContactSection = () => (
       <span className="ml-0 max-w-md mx-2 font-bold">
         Przynależność do Stowarzyszeń zawodowych:
       </span>
-      Jestem czlonkiem British Psychological Society (BPS); European Association for Body Psychotherapy (EABP);
-      EMDR Association for UK & Irland; Polish Association of Somatic Experiencing (PSSE); The Health and Care Professions Council in UK (HCPC).
+      <ul className="list-outside list-style-none pl-0 ml-0">
+        <li>
+          Jestem czlonkiem
+        </li>
+        <li>
+          <a className="mb-3 text-md text-teal-600 hover:underline" href="https://www.bps.org.uk/">
+            British Psychological Society (BPS)
+          </a>;
+        </li>
+        <li>
+          <a className="mb-3 text-md text-teal-600 hover:underline" href="https://eabp.org/">
+            European Association for Body Psychotherapy (EABP)
+          </a>;
+        </li>
+        <li>
+          <a className="mb-3 text-md text-teal-600 hover:underline" href="https://emdrassociation.org.uk/">
+            EMDR Association for UK & Irland
+          </a>;
+        </li>
+        <li>
+          <a className="mb-3 text-md text-teal-600 hover:underline" href="https://psse.net.pl/">
+            Polish Association of Somatic Experiencing (PSSE)
+          </a>;
+        </li>
+        <li>
+          <a className="mb-3 text-md text-teal-600 hover:underline" href="https://www.hcpc-uk.org/">
+            The Health and Care Professions Council in UK (HCPC)
+          </a>.
+        </li>
+      </ul>
     </p>
     <p className="text-gray-600 mt-2 max-w-md mx-2">
       Pracuję zgodnie z zasadami poufności oraz polityką ochrony danych osobowych. Regularnie korzystam z Superwizji.

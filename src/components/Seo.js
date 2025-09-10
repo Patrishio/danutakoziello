@@ -12,7 +12,7 @@ const Seo = () => {
     "@type": "Person",
     "name": "Danuta Koziełło-Doherty",
     "jobTitle": "Psycholog, Psychoterapeuta",
-    "description": "Psycholog i psychoterapeuta specjalizujący się w terapii traumy, teorii przywiązania i podejściach somatycznych.",
+    "description": "Polski psychoterapeuta w Leeds, specjalizujący się w terapii traumy, podejściu somatycznym i pracy z relacjami. Sesje indywidualne w gabinecie i online.",
     "url": siteUrl,
     "image": `${siteUrl}${ogImagePath}`,
     "address": {
@@ -34,10 +34,10 @@ const Seo = () => {
   return (
     <Helmet>
       <html lang="pl" />
-      <title>Psychoterapia – Danuta Koziełło-Doherty</title>
+      <title>Polski psychoterapeuta w Leeds | Danuta Koziełło-Doherty</title>
       <meta
         name="description"
-        content="Danuta Koziełło-Doherty – psycholog i psychoterapeuta. Oferuję terapię traumy, pracę z relacjami i wsparcie online oraz w gabinecie w Leeds."
+        content="Polski psychoterapeuta w Leeds – Danuta Koziełło-Doherty. Oferuję psychoterapię indywidualną, terapię traumy i pracę z ciałem. Spotkania stacjonarne w Leeds i terapia online."
       />
       <meta name="author" content="Danuta Koziełło-Doherty" />
       <meta name="keywords" content="Psycholog, Psychoterapia indywidualna, Terapia indywidualna, Metody, Terapia z ciałem, Leeds, West Yorkshire, Terapia Online, Polski psychoterapeuta Leeds" />
@@ -47,10 +47,10 @@ const Seo = () => {
 
       {/* Open Graph */}
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Danuta Koziełło-Doherty – Psychoterapia i wsparcie terapeutyczne" />
+      <meta property="og:title" content="Polski psychoterapeuta w Leeds – Danuta Koziełło-Doherty" />
       <meta
         property="og:description"
-        content="Psycholog kliniczny i certyfikowany psychoterapeuta specjalizujący się w pracy z traumą i podejściami somatycznymi. Terapia indywidualna online i stacjonarnie."
+        content="Polski psychoterapeuta w Leeds. Psychoterapia indywidualna, terapia traumy i podejścia somatyczne. Sesje stacjonarne w Leeds i online."
       />
       <meta property="og:url" content={`${siteUrl}${pathname}`} />
       <meta property="og:image" content={`${siteUrl}${ogImagePath}`} />
