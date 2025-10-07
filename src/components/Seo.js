@@ -40,7 +40,7 @@ const Seo = () => {
         content="Polski psychoterapeuta w Leeds – Danuta Koziełło-Doherty. Oferuję psychoterapię indywidualną, terapię traumy i pracę z ciałem. Spotkania stacjonarne w Leeds i terapia online."
       />
       <meta name="author" content="Danuta Koziełło-Doherty" />
-      <meta name="keywords" content="Psycholog, Psychoterapia indywidualna, Terapia indywidualna, Metody, Terapia z ciałem, Leeds, West Yorkshire, Terapia Online, Polski psychoterapeuta Leeds" />
+      <meta name="keywords" content="Psycholog, Psychoterapia indywidualna, Terapia indywidualna, Metody, Terapia z ciałem, Leeds, West Yorkshire, Terapia Online, Polski psychoterapeuta Leeds, polska psychoterapia w Leeds" />
       <meta name="robots" content="index, follow" />
       <meta name="language" content="pl-PL" />
       <link rel="canonical" href={`${siteUrl}${pathname}`} />
